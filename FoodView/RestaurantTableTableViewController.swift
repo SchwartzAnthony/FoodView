@@ -58,6 +58,10 @@ class RestaurantTableTableViewController: UITableViewController {
         cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
         cell.locationLabel?.text = restaurantLocations[indexPath.row]
         cell.typeLabel?.text = restaurantTypes[indexPath.row]
+        cell.nameLabel?.lineBreakMode = .byCharWrapping
+        cell.nameLabel?.numberOfLines = 0
+        //label.lineBreakMode = .ByCharWrapping
+        //label.numberOfLines = 0
 
         return cell
     }
